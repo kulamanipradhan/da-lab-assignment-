@@ -1,0 +1,13 @@
+a = 2
+b = 3
+c = 4
+if(a>b & a>c){
+	print (past(a," is gretest"))
+}
+else if(b>a & b>c){
+	print (past(b," is gretest"))
+}
+else{
+	print (past(c," is gretest"))
+}
+

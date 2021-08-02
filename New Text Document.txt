@@ -1,0 +1,53 @@
+a = as.integer(readline(prompt="Enter a number: "))
+max_factor <- function(a){
+	factor = 2
+	while (factor * factor <= a){
+		while (a % factor == 0){
+			a /= factor
+		}
+		factor += 1
+	}
+	if(a > 1){
+		print(a)
+		}
+	print(factor)
+}
+max_factor(a)
+
+
+
+---------------------------------------------------------------------------
+
+  n = as.integer(readline(prompt = "Enter a number :"))
+  
+  rev = 0
+  num = n
+  
+  while (n > 0) {
+    r = n %% 10
+    rev = rev * 10 + r
+    n = n %/% 10
+  }
+  
+  if (rev == num)
+  {
+    print(paste("Number is palindrome :", rev))
+  }
+  else{
+    print(paste("Number is not palindrome :", rev))
+  }
+
+
+----------------------------------------------------------------------------
+
+
+
+sum=0;
+sq=0;
+res = 0;
+n = 10;
+
+sum = n*(n+1)/2;
+sq=(n*(n+1)*(2*n+1))/6;
+res=sum*sum-sq;
+print(res)
